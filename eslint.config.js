@@ -6,7 +6,7 @@ import globals from "globals";
 export default [
   js.configs.recommended,
 
-  // 🌐 Browser environment (FIXES document, HTMLElement)
+  // Browser environment (FIXES document, HTMLElement)
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
@@ -14,7 +14,7 @@ export default [
     },
   },
 
-  // 🧠 TypeScript
+  // TypeScript
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -33,7 +33,7 @@ export default [
     },
   },
 
-  // 🧪 Jest
+  // Jest
   {
     files: ["**/*.test.{js,ts,tsx}", "**/*.spec.{js,ts,tsx}"],
     languageOptions: {
@@ -41,7 +41,7 @@ export default [
     },
   },
 
-  // ⚛️ React modern setup (FIXES React errors)
+  // React modern setup (FIXES React errors)
   {
     files: ["**/*.{jsx,tsx}"],
     rules: {
