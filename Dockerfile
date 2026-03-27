@@ -17,6 +17,6 @@ WORKDIR /Bogoslovtcev_Eduard_ui_garden
 
 COPY --from=build /Bogoslovtcev_Eduard_ui_garden/storybook-static /usr/share/nginx/html
 
-EXPOSE 8083
+EXPOSE 8018
 
 CMD ["nginx", "-g", "daemon off;"]
