@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { ImgProps } from "./Img.types";
 
+const x = 1;
+
 const StyledImg = styled.img<{
   disabled?: boolean;
   width: string;
