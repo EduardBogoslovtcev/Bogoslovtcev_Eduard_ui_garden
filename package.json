@@ -28,7 +28,9 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "eslintConfig": {
     "extends": [
@@ -64,6 +66,7 @@
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
     "babel-jest": "^30.3.0",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-storybook": "^10.2.13",
     "globals": "^17.4.0",
     "jest": "^30.2.0",

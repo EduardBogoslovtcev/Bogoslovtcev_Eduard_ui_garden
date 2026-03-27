@@ -6,7 +6,15 @@ import globals from "globals";
 export default [
   js.configs.recommended,
 
-  // TypeScript support
+  // 🌐 Browser environment (FIXES document, HTMLElement)
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    languageOptions: {
+      globals: globals.browser,
+    },
+  },
+
+  // 🧠 TypeScript
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -25,11 +33,19 @@ export default [
     },
   },
 
-  // Jest environment
+  // 🧪 Jest
   {
     files: ["**/*.test.{js,ts,tsx}", "**/*.spec.{js,ts,tsx}"],
     languageOptions: {
       globals: globals.jest,
+    },
+  },
+
+  // ⚛️ React modern setup (FIXES React errors)
+  {
+    files: ["**/*.{jsx,tsx}"],
+    rules: {
+      "react/react-in-jsx-scope": "off", // no need for import React
     },
   },
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface LabelProps {
-    text: string;
-    color?: string;
-    disabled?: boolean;
+  text: string;
+  color?: string;
+  disabled?: boolean;
 }

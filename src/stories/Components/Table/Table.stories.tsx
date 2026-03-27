@@ -6,12 +6,12 @@ import { TableCell } from "./Table_cell";
 import { TableFooter } from "./Table_footer";
 
 const meta: Meta<typeof Table> = {
-    title: "Components/Table",
-    component: Table,
-    argTypes: {
-        backgroundColor: { control: "color" },
-        disabled: { control: "boolean" },
-    },
+  title: "Components/Table",
+  component: Table,
+  argTypes: {
+    backgroundColor: { control: "color" },
+    disabled: { control: "boolean" },
+  },
 };
 
 export default meta;
@@ -19,43 +19,43 @@ export default meta;
 type Story = StoryObj<typeof Table>;
 
 export const Default: Story = {
-    args: {
-        children: {},
-        disabled: true,
-    },
+  args: {
+    children: {},
+    disabled: true,
+  },
 
-    render: (args) => (
-        <Table {...args}>
-            <TableHeader>
-                <TableRow>
-                    <TableCell>Header 1</TableCell>
-                    <TableCell>Header 2</TableCell>
-                </TableRow>
-            </TableHeader>
-            <tbody>
-                <TableRow>
-                    <TableCell>Row 1</TableCell>
-                    <TableCell>Data 1</TableCell>
-                </TableRow>
-            </tbody>
-            <TableFooter>
-                <TableRow>
-                    <TableCell>Footer</TableCell>
-                    <TableCell>Total</TableCell>
-                </TableRow>
-            </TableFooter>
-        </Table>
-    ),
+  render: (args) => (
+    <Table {...args}>
+      <TableHeader>
+        <TableRow>
+          <TableCell>Header 1</TableCell>
+          <TableCell>Header 2</TableCell>
+        </TableRow>
+      </TableHeader>
+      <tbody>
+        <TableRow>
+          <TableCell>Row 1</TableCell>
+          <TableCell>Data 1</TableCell>
+        </TableRow>
+      </tbody>
+      <TableFooter>
+        <TableRow>
+          <TableCell>Footer</TableCell>
+          <TableCell>Total</TableCell>
+        </TableRow>
+      </TableFooter>
+    </Table>
+  ),
 };
 
 export const Disabled: Story = {
-    render: () => (
-        <Table disabled>
-            <TableHeader disabled>
-                <TableRow disabled>
-                    <TableCell disabled>Header</TableCell>
-                </TableRow>
-            </TableHeader>
-        </Table>
-    ),
+  render: () => (
+    <Table disabled>
+      <TableHeader disabled>
+        <TableRow disabled>
+          <TableCell disabled>Header</TableCell>
+        </TableRow>
+      </TableHeader>
+    </Table>
+  ),
 };
